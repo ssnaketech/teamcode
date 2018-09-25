@@ -30,7 +30,7 @@ public class Bucuresti extends LinearOpMode {
         Motor_A2        = hardwareMap.dcMotor.get("Motor_A2");
         Motor_B1        = hardwareMap.dcMotor.get("Motor_B1");
         Motor_B2        = hardwareMap.dcMotor.get("Motor_B2");
-        Motor_Brat = hardwareMap.dcMotor.get("Motor_Brat");
+        Motor_Brat          = hardwareMap.dcMotor.get("Motor_Brat");
         Servo_brat1         = hardwareMap.servo.get("Servo_brat1");
         Servo_brat2         = hardwareMap.servo.get("Servo_brat2");
 
