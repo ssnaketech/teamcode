@@ -21,6 +21,7 @@ public class HardwareConfig
     public Servo        servo_brat1 = null;
     public Servo        servo_brat2 = null;
     public ColorSensor  colorSensor = null;
+    public DcMotor      Stefanel = null;
 
     public final static double initial_pos = 0.0;
     public final static double min_pos = 0.0;
@@ -62,11 +63,13 @@ public class HardwareConfig
         motorB1.setDirection(DcMotor.Direction.FORWARD);
         motorB2.setDirection(DcMotor.Direction.FORWARD);
         motor_brat.setDirection(DcMotor.Direction.REVERSE);
+        Stefanel        =hwMap.get(DcMotor.class,"Stefanel");
         // Set all motors to zero power
         motorA1.setPower(0);
         motorA2.setPower(0);
         motorB1.setPower(0);
         motorB2.setPower(0);
+        Stefanel.setPower(0);
 
         // Set all motors to run without encoders.
         // May want to use RUN_USING_ENCODERS if encoders are installed.
